@@ -1,4 +1,4 @@
-// prints amicable numbers for 2 hard corded arrays
+// prints amicable numbers for 2 hard coded arrays
 
 import java.io.*; 
   

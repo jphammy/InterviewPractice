@@ -1,0 +1,22 @@
+import junit.framework.TestCase;
+
+public class Test extends TestCase {
+
+	Compression objectTest;
+	
+	public void setUp () {
+		
+		objectTest = new Compression();
+	}
+	
+	public void createTestObject () throws Exception {
+		
+		assertNotNull(objectTest);
+	}
+	
+	public void createTest1 () throws Exception {
+
+		assertTrue  (objectTest.isCompressed("aaabccc"));
+	}
+	
+}

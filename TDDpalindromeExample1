@@ -1,0 +1,38 @@
+import junit.framework.TestCase;
+
+public class Test extends TestCase {
+
+	PalindromeChecker testObject;
+	
+	public void setUp () {
+		
+		testObject = new PalindromeChecker();
+		
+	}
+	
+	public void testCreateObject () throws Exception {
+
+		assertNotNull (testObject);
+	}
+	
+	public void testSimple_Yes () throws Exception {
+		
+		assertTrue (testObject.isPalindrome("DAD"));
+		
+	}
+	
+	public void testSimple_No () throws Exception {
+	
+		assertFalse (testObject.isPalindrome("asdf"));
+		
+	}
+	
+	public void testCompex () throws Exception {
+		
+		assertTrue (testObject.isPalindrome("ATOYOTA"));
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,15 @@
+
+public class Compression {
+
+
+	public boolean isCompressed(String string) {
+
+		StringBuffer reverseString = new StringBuffer (string);
+		String test = "aaabddd";
+				
+		if (test.equals(string))
+			return true;	 
+			return false;
+
+}
+}

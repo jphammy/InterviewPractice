@@ -1,0 +1,14 @@
+
+public class PalindromeChecker {
+
+	public boolean isPalindrome(String string) {
+
+		StringBuffer reverseString = new StringBuffer (string);
+		reverseString.reverse();
+		
+		if (string.equalsIgnoreCase(reverseString.toString()))
+			return true;
+		return false;
+	}
+
+}

@@ -1,0 +1,22 @@
+
+public class TDDCalculator {
+	
+	public boolean calculatorWorks () {
+
+		return true;
+	
+	}
+
+	public void add2Val(int a, int b) {
+
+		int sum = a+b;
+
+		if (a + b == sum)
+			System.out.println("Sum of " + a + " and " + b 
+					+ " equals " + sum);
+		else 
+			System.out.println("Not a sum");
+	}
+	
+	
+}

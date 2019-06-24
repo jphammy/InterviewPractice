@@ -1,0 +1,30 @@
+//Prime number?
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    int number;
+    cout << "Enter number: " << endl;
+    cin >> number;
+    int flag = 0; //set flag value
+    
+    for ( int i = 2 ; i <= number/2 ; i++ )  {
+        if (number % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+        
+    if (flag != 1) {
+        cout << "Prime number entered" << endl;
+    }
+        
+    else {
+        cout << "Not a prime number" << endl;
+    }
+    
+    return 0;
+}

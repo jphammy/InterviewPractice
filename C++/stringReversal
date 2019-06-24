@@ -1,0 +1,43 @@
+//Sting reversal w/ user input
+
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+void reverseString (char string1 [], int start, int end) {
+    
+    while (start < end) {
+        int temp = string1[start];
+        string1[start] = string1[end];
+        string1[end] = temp;
+        start ++;
+        end --;
+    }
+    
+}
+
+void printString (char string1[], int n) {
+    
+    for (int i = 0 ; i < n ; i++) {
+        cout << string1[i];
+    }
+    
+}
+
+int main()
+{
+    char string1[50];
+    cout << "Enter string: " << endl;
+    cin >> string1;
+    
+    int n = strlen(string1);
+    
+    int start = 0;
+    int end = n-1;
+    
+    reverseString(string1, start, end);
+    printString(string1,n);
+
+    return 0;
+}

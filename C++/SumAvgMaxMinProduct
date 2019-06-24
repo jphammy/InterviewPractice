@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int arr [] = { 1 , 2 , 3 } ;
+    
+    int sum = 0;
+    int product = 1;
+    int max;
+    int min = arr[0];
+    
+    for (int i = 0 ; i < 3 ; i++) {
+        
+        sum = sum + arr[i];
+        product = product * arr[i];
+        if ( arr [i] > arr[i+1]) {
+            max = arr[i]; 
+        }
+        if ( arr [i] < min) {
+            min = arr[i]; 
+        }
+    }
+    
+    int avg;
+    avg = sum / 3;
+
+    cout << "Sum is " << sum << endl;
+    cout << "Avg is " << avg << endl;
+    cout << "Max is " << max << endl;
+    cout << "Min is " << min << endl;
+    cout << "Product is " << product << endl;
+
+    return 0;
+}
